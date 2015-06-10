@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><!--基金分拆界面-->
+<Window>
+<VerticalLayout name="FundSplitUI" bkcolor="#FFF5FFFA">
+	<Label text="基金分拆" height="25" padding="20,0,0,0" font="0" textcolor="#FFFF0000"/>				
+	<Control height="2" bkcolor="#FFBFEFFF"/>
+	<HorizontalLayout height="250">
+		<VerticalLayout inset="20,10,0,0" width="210">					
+			<HorizontalLayout padding="10,7,0,0">
+				<Label text="基金代码:" width="60" height="20" font="1" textcolor="#FFFF0000"/>											
+				<Combo name="FundIDComb" width="100" height="20" pos="70,4" float="true" normalimage="file='UI/Combo_nor.bmp' corner='2,2,24,2'" hotimage="file='UI/Combo_over.bmp' corner='2,2,24,2'" pushedimage="file='UI/Combo_over.bmp' corner='2,2,24,2'"  textpadding="3,1,1,1" >
+					<ListLabelElement text="IF1503" selected="true" />
+					<ListLabelElement text="IF1505" />
+					<ListLabelElement text="IF1506" />
+					<ListLabelElement text="IF1509" />
+				</Combo>
+				<Edit name="FundIDEdt" width="80" height="20" pos="71,5" float="true" font="1"/>					
+			</HorizontalLayout>
+			<HorizontalLayout padding="23,10,0,0">
+				<Label text="母基金:" width="60" height="20" font="1" textcolor="#FFFF0000"/>
+				<Label name="MomFundLab" width="100" height="20" font="4" padding="10,0,0,0" />						
+			</HorizontalLayout>
+			<HorizontalLayout padding="30,10,0,0">
+				<Label text="A基金:" width="60" height="20" font="1" textcolor="#FFFF0000"/>
+				<Label name="AFundLab" width="100" height="20" font="4" padding="10,0,0,0" />						
+			</HorizontalLayout>
+			<HorizontalLayout padding="30,10,0,0">
+				<Label text="B基金:" width="60" height="20" font="1" textcolor="#FFFF0000"/>
+				<Label name="BFundLab" width="100" height="20" font="4" padding="10,0,0,0" />						
+			</HorizontalLayout>
+			<HorizontalLayout padding="10,10,0,0">
+				<Label text="状态说明:" width="60" height="20" font="1" textcolor="#FFFF0000"/>
+				<Label name="SplitStatusLab" width="100" height="20" font="4" padding="10,0,0,0"/>
+			</HorizontalLayout>
+			<HorizontalLayout padding="10,10,0,0">
+				<Label text="可拆份额:" width="60" height="20" font="1" textcolor="#FFFF0000"/>
+				<Label name="CanSplitNumLab" width="100" height="20" font="4" padding="10,0,0,0"/>
+			</HorizontalLayout>
+			<HorizontalLayout padding="10,10,0,0">
+				<Label text="拆分份额:" width="60" height="20" font="1" textcolor="#FFFF0000"/>
+				<Edit name="SplitEdt" width="90" height="20" font="1" padding="10,0,0,0" bkimage="file='UI/search_bg.png' source='0,0,258,23' corner='1,1,1,1'"/>
+				<VerticalLayout>
+					<Button name="ShareAddBtn" width="10" height="10" normalimage="file='UI/scrollbar.bmp' source='0,90,16,106' corner='1,1,1,1'"  hotimage="file='UI/scrollbar.bmp' source='54,92,70,108' corner='1,1,1,1'" pushedimage="file='UI/scrollbar.bmp' source='36,92,52,108' corner='1,1,1,1'"/>
+					<Button name="ShareSubBtn" width="10" height="10" normalimage="file='UI/scrollbar.bmp' source='0,108,16,124' corner='1,1,1,1'" hotimage="file='UI/scrollbar.bmp' source='54,106,70,122' corner='1,1,1,1'" pushedimage="file='UI/scrollbar.bmp' source='36,106,52,122' corner='1,1,1,1'"/>
+				</VerticalLayout>
+			</HorizontalLayout>
+			<HorizontalLayout />
+			<HorizontalLayout height="25" padding="60,10,0,0">
+				<Button name="RefillBtn" text="重填" width="50" normalimage="file=&apos;UI/button_nor.bmp&apos;" hotimage="file='UI/Button_Hot.png' " pushedimage="file='UI/button_pushed.png' "/>
+				<Button name="SplitBtn" text="拆分" width="50" padding="20,0,0,0" normalimage="file=&apos;UI/button_nor.bmp&apos;" hotimage="file='UI/Button_Hot.png' " pushedimage="file='UI/button_pushed.png' "/>
+			</HorizontalLayout>
+		</VerticalLayout>
+	</HorizontalLayout>
+	<HorizontalLayout insert="2,2,2,2" height="30">
+		<Option name="OrderOpt"  text="委托" font="5" padding="2,0,0,0" width="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" normalimage="UI/tabbar_normal.png" hotimage="UI/tabbar_hover.png" pushedimage="tabbar_pushed.png" selected="true" selectedimage="UI/tabbar_pushed.png" group="SelectOption"/>
+		<Option name="DealOpt"     text="成交" font="5" padding="2,0,0,0" width="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" normalimage="UI/tabbar_normal.png" hotimage="UI/tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="UI/tabbar_pushed.png" group="SelectOption" />
+		<Option name="PositionOpt" text="持仓" font="5" padding="2,0,0,0" width="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" normalimage="UI/tabbar_normal.png" hotimage="UI/tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="UI/tabbar_pushed.png" group="SelectOption"/>
+		<Button name="RefreshBtn"    text="刷新" font="5" padding="200,4,4,4" width="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" normalimage="file=&apos;UI/button_nor.bmp&apos;" hotimage="file='UI/Button_Hot.png' " pushedimage="file='UI/button_pushed.png' " selectedimage="UI/tabbar_pushed.png" />
+		<Button name="CancelAllBtn"  text="全撤" font="5" padding="20,4,4,4"  width="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" normalimage="file=&apos;UI/button_nor.bmp&apos;" hotimage="file='UI/Button_Hot.png' " pushedimage="file='UI/button_pushed.png' " selectedimage="UI/tabbar_pushed.png" />
+		<Button name="CancelBuyBtn"  text="撤买" font="5" padding="5,4,4,4"   width="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" normalimage="file=&apos;UI/button_nor.bmp&apos;" hotimage="file='UI/Button_Hot.png' " pushedimage="file='UI/button_pushed.png' " selectedimage="UI/tabbar_pushed.png" />
+		<Button name="CancelSellBtn" text="撤卖" font="5" padding="5,4,4,4"   width="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" normalimage="file=&apos;UI/button_nor.bmp&apos;" hotimage="file='UI/Button_Hot.png' " pushedimage="file='UI/button_pushed.png' " selectedimage="UI/tabbar_pushed.png" />
+	</HorizontalLayout>
+	<Control height="2" bkcolor="#FFE0EEEE"/>
+	<TabLayout name="Switch">
+		<HorizontalLayout>			
+			<Include source="xml/StockOrderList.xml" />
+		</HorizontalLayout>
+		<HorizontalLayout>		
+			<Include source="xml/StockDealList.xml" />
+		</HorizontalLayout>
+		<HorizontalLayout>		
+			<Include source="xml/StockPositionList.xml" />
+		</HorizontalLayout>
+	</TabLayout>	
+</VerticalLayout>
+</Window>

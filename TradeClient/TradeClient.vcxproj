@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0CBBACFD-CC3D-416F-A7B1-050887BF09E5}</ProjectGuid>
+    <RootNamespace>TradeClient</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <EmbedManifest>false</EmbedManifest>
+    <IncludePath>D:\Develop\boost_1.56\boost_1_56_0;E:\LiYi\Project\TradeClient\TradeClient\include\google\protobuf;E:\LiYi\Project\TradeClient\TradeClient\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Develop\boost_1.56\boost_1_56_0\stage\lib;E:\LiYi\Project\TradeClient\TradeClient\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>E:\LiYi\Project\TradeClient\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Base\CharacterSet.cpp" />
+    <ClCompile Include="Base\ControllerBase.cpp" />
+    <ClCompile Include="Base\TimeKit.cpp" />
+    <ClCompile Include="FrameWnd\FundMergeUI.cpp" />
+    <ClCompile Include="FrameWnd\FundSplitUI.cpp" />
+    <ClCompile Include="FrameWnd\FuturesCapitalFlowUI.cpp" />
+    <ClCompile Include="FrameWnd\FuturesCapitalPositionUI.cpp" />
+    <ClCompile Include="FrameWnd\FuturesDailyDealUI.cpp" />
+    <ClCompile Include="FrameWnd\FuturesDailyOrderUI.cpp" />
+    <ClCompile Include="FrameWnd\FuturesOrderUI.cpp" />
+    <ClCompile Include="FrameWnd\FuturesPastDealUI.cpp" />
+    <ClCompile Include="FrameWnd\FuturesPastOrderUI.cpp" />
+    <ClCompile Include="FrameWnd\LockScreenUI.cpp" />
+    <ClCompile Include="FrameWnd\LoginFrameWnd.cpp" />
+    <ClCompile Include="FrameWnd\MainFrameWnd.cpp" />
+    <ClCompile Include="FrameWnd\StockBuyUI.cpp" />
+    <ClCompile Include="FrameWnd\StockCancleUI.cpp" />
+    <ClCompile Include="FrameWnd\StockCapitalFlowUI.cpp" />
+    <ClCompile Include="FrameWnd\StockCapitalPositionUI.cpp" />
+    <ClCompile Include="FrameWnd\StockDailyDealUI.cpp" />
+    <ClCompile Include="FrameWnd\StockDailyOrderUI.cpp" />
+    <ClCompile Include="FrameWnd\StockPastDealUI.cpp" />
+    <ClCompile Include="FrameWnd\StockPastOrderUI.cpp" />
+    <ClCompile Include="FrameWnd\StockSellUI.cpp" />
+    <ClCompile Include="DuiEx\UIMenu.cpp" />
+    <ClCompile Include="TradeClient.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Base\TimeKit.h" />
+    <ClInclude Include="FrameWnd\FundMergeUI.h" />
+    <ClInclude Include="FrameWnd\FundSplitUI.h" />
+    <ClInclude Include="FrameWnd\FuturesCapitalFlowUI.h" />
+    <ClInclude Include="FrameWnd\FuturesCapitalPositionUI.h" />
+    <ClInclude Include="FrameWnd\FuturesDailyDealUI.h" />
+    <ClInclude Include="FrameWnd\FuturesDailyOrderUI.h" />
+    <ClInclude Include="FrameWnd\FuturesOrderUI.h" />
+    <ClInclude Include="FrameWnd\FuturesPastDealUI.h" />
+    <ClInclude Include="FrameWnd\FuturesPastOrderUI.h" />
+    <ClInclude Include="FrameWnd\LockScreenUI.h" />
+    <ClInclude Include="FrameWnd\LoginFrameWnd.h" />
+    <ClInclude Include="FrameWnd\MainFrameWnd.h" />
+    <ClInclude Include="FrameWnd\StockBuyUI.h" />
+    <ClInclude Include="FrameWnd\StockCancelUI.h" />
+    <ClInclude Include="FrameWnd\StockCapitalFlowUI.h" />
+    <ClInclude Include="FrameWnd\StockCapitalPositionUI.h" />
+    <ClInclude Include="FrameWnd\StockDailyDealUI.h" />
+    <ClInclude Include="FrameWnd\StockDailyOrderUI.h" />
+    <ClInclude Include="FrameWnd\StockPastDealUI.h" />
+    <ClInclude Include="FrameWnd\StockPastOrderUI.h" />
+    <ClInclude Include="FrameWnd\StockSellUI.h" />
+    <ClInclude Include="Base\AbstractUI.h" />
+    <ClInclude Include="Base\CharacterSet.h" />
+    <ClInclude Include="Base\Context.h" />
+    <ClInclude Include="Base\UserMessage.h" />
+    <ClInclude Include="Base\version.h" />
+    <ClInclude Include="DuiEx\ObserverBase.h" />
+    <ClInclude Include="DuiEx\UIMenu.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

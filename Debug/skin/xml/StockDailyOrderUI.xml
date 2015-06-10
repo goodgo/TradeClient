@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><!--现货当日委托界面-->
+<Window>			
+	<VerticalLayout name="StockDailyOrderUI">
+		<Label text="当日委托" height="25" padding="20,0,0,0" font="0" textcolor="#FFFF0000"/>
+		<Control height="2" bkcolor="#FFBFEFFF"/>
+		<HorizontalLayout>
+			<Include source="xml/StockOrderList.xml" />
+		</HorizontalLayout>
+	</VerticalLayout>
+</Window>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><!--现货委托表头-->
+<Window>
+	<List name="StockOrderList" bkcolor="#FFFFFFFF" inset="0,0,0,0" itemshowhtml="true" vscrollbar="true" hscrollbar="true" headerbkimage="file='skin/ListRes/list_header_bg.png'" itemalign="center" itembkcolor="#FFE2DDDF" itemaltbk="true" hscrollbar="true" vscrollbar="true" menu="true">
+		<ListHeader name="StockOrderListHeader" height="24" menu="true">
+			<ListHeaderItem text="证券代码" font="1" width="80" normalimage="file='UI/Button_Non.png'" hotimage="file='UI/list_header_hot.png'" pushedimage="file='UI/list_header_pushed.png'" sepimage="file='UI/list_header_sep.png'" sepwidth="1"/>
+			<ListHeaderItem text="证券名称" font="1" width="80" normalimage="file='UI/Button_Non.png'" hotimage="file='UI/list_header_hot.png'" pushedimage="file='UI/list_header_pushed.png'" sepimage="file='UI/list_header_sep.png'" sepwidth="1"/>
+			<ListHeaderItem text="委托数量" font="1" width="80" normalimage="file='UI/Button_Non.png'" hotimage="file='UI/list_header_hot.png'" pushedimage="file='UI/list_header_pushed.png'" sepimage="file='UI/list_header_sep.png'" sepwidth="1"/>
+			<ListHeaderItem text="成交数量" font="1" width="80" normalimage="file='UI/Button_Non.png'" hotimage="file='UI/list_header_hot.png'" pushedimage="file='UI/list_header_pushed.png'" sepimage="file='UI/list_header_sep.png'" sepwidth="1"/>
+			<ListHeaderItem text="委托价格" font="1" width="80" normalimage="file='UI/Button_Non.png'" hotimage="file='UI/list_header_hot.png'" pushedimage="file='UI/list_header_pushed.png'" sepimage="file='UI/list_header_sep.png'" sepwidth="1"/>
+			<ListHeaderItem text="成交均价" font="1" width="80" normalimage="file='UI/Button_Non.png'" hotimage="file='UI/list_header_hot.png'" pushedimage="file='UI/list_header_pushed.png'" sepimage="file='UI/list_header_sep.png'" sepwidth="1"/>
+			<ListHeaderItem text="操作"     font="1" width="50" normalimage="file='UI/Button_Non.png'" hotimage="file='UI/list_header_hot.png'" pushedimage="file='UI/list_header_pushed.png'" sepimage="file='UI/list_header_sep.png'" sepwidth="1"/>
+			<ListHeaderItem text="委托时间" font="1" width="80" normalimage="file='UI/Button_Non.png'" hotimage="file='UI/list_header_hot.png'" pushedimage="file='UI/list_header_pushed.png'" sepimage="file='UI/list_header_sep.png'" sepwidth="1"/>
+			<ListHeaderItem text="委托日期" font="1" width="80" normalimage="file='UI/Button_Non.png'" hotimage="file='UI/list_header_hot.png'" pushedimage="file='UI/list_header_pushed.png'" sepimage="file='UI/list_header_sep.png'" sepwidth="1"/>
+			<ListHeaderItem text="合同编号" font="1" width="80" normalimage="file='UI/Button_Non.png'" hotimage="file='UI/list_header_hot.png'" pushedimage="file='UI/list_header_pushed.png'" sepimage="file='UI/list_header_sep.png'" sepwidth="1"/>
+			<ListHeaderItem text="交易市场" font="1" width="80" normalimage="file='UI/Button_Non.png'" hotimage="file='UI/list_header_hot.png'" pushedimage="file='UI/list_header_pushed.png'" sepimage="file='UI/list_header_sep.png'" sepwidth="1"/>
+			<ListHeaderItem text=""     font="1" width="80" normalimage="file='UI/Button_Non.png'" hotimage="file='UI/list_header_hot.png'" pushedimage="file='UI/list_header_pushed.png'" sepimage="file='UI/list_header_sep.png'" sepwidth="1"/>					
+		</ListHeader>
+	</List>
+</Window>

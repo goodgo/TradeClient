@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3975bbe6-951b-4c36-becc-e6583da1f2e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Controller">
+      <UniqueIdentifier>{d9532e7b-d769-4abd-bf66-3b550e691902}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Base">
+      <UniqueIdentifier>{70462042-04ce-4165-ae62-12b5b4f4d875}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FrameWnd">
+      <UniqueIdentifier>{84c08eb8-de1b-4dce-999c-1deab9eb1ecc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Business">
+      <UniqueIdentifier>{540e1dde-d7c5-4d4f-87c4-56e47663238c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DuiEx">
+      <UniqueIdentifier>{6b8e7052-a09b-4f13-a1d0-54b81160a595}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9bb5bd0e-441a-4053-8a72-68070e2ed527}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\FrameWnd">
+      <UniqueIdentifier>{29f76acf-a47d-45b0-9cc7-733642588115}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Base">
+      <UniqueIdentifier>{4d259de4-db4e-4cb4-a769-0955345dbd8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Controller">
+      <UniqueIdentifier>{99b767ac-f35c-447c-a22c-41593a509058}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Business">
+      <UniqueIdentifier>{e5d462fa-f297-4252-b62c-80f7244d5fa7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DuiEx">
+      <UniqueIdentifier>{7f9c5101-5077-49e5-99a6-a77cbb0a221d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK">
+      <UniqueIdentifier>{3d839702-5fa0-451c-9d43-37764dba174b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Base\CharacterSet.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\ControllerBase.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWnd\FundMergeUI.cpp">
+      <Filter>Source Files\FrameWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWnd\FundSplitUI.cpp">
+      <Filter>Source Files\FrameWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWnd\FuturesCapitalFlowUI.cpp">
+      <Filter>Source Files\FrameWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWnd\FuturesCapitalPositionUI.cpp">
+      <Filter>Source Files\FrameWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWnd\FuturesDailyDealUI.cpp">
+      <Filter>Source Files\FrameWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWnd\FuturesDailyOrderUI.cpp">
+      <Filter>Source Files\FrameWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWnd\FuturesOrderUI.cpp">
+      <Filter>Source Files\FrameWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWnd\FuturesPastDealUI.cpp">
+      <Filter>Source Files\FrameWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWnd\FuturesPastOrderUI.cpp">
+      <Filter>Source Files\FrameWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWnd\LockScreenUI.cpp">
+      <Filter>Source Files\FrameWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWnd\LoginFrameWnd.cpp">
+      <Filter>Source Files\FrameWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWnd\MainFrameWnd.cpp">
+      <Filter>Source Files\FrameWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWnd\StockBuyUI.cpp">
+      <Filter>Source Files\FrameWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWnd\StockCancleUI.cpp">
+      <Filter>Source Files\FrameWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWnd\StockCapitalFlowUI.cpp">
+      <Filter>Source Files\FrameWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWnd\StockCapitalPositionUI.cpp">
+      <Filter>Source Files\FrameWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWnd\StockDailyDealUI.cpp">
+      <Filter>Source Files\FrameWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWnd\StockDailyOrderUI.cpp">
+      <Filter>Source Files\FrameWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWnd\StockPastDealUI.cpp">
+      <Filter>Source Files\FrameWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWnd\StockPastOrderUI.cpp">
+      <Filter>Source Files\FrameWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWnd\StockSellUI.cpp">
+      <Filter>Source Files\FrameWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiEx\UIMenu.cpp">
+      <Filter>Source Files\DuiEx</Filter>
+    </ClCompile>
+    <ClCompile Include="TradeClient.cpp" />
+    <ClCompile Include="Base\TimeKit.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FrameWnd\FundMergeUI.h">
+      <Filter>Header Files\FrameWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWnd\FundSplitUI.h">
+      <Filter>Header Files\FrameWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWnd\FuturesCapitalFlowUI.h">
+      <Filter>Header Files\FrameWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWnd\FuturesCapitalPositionUI.h">
+      <Filter>Header Files\FrameWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWnd\FuturesDailyDealUI.h">
+      <Filter>Header Files\FrameWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWnd\FuturesDailyOrderUI.h">
+      <Filter>Header Files\FrameWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWnd\FuturesOrderUI.h">
+      <Filter>Header Files\FrameWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWnd\FuturesPastDealUI.h">
+      <Filter>Header Files\FrameWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWnd\FuturesPastOrderUI.h">
+      <Filter>Header Files\FrameWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWnd\LockScreenUI.h">
+      <Filter>Header Files\FrameWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWnd\LoginFrameWnd.h">
+      <Filter>Header Files\FrameWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWnd\MainFrameWnd.h">
+      <Filter>Header Files\FrameWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWnd\StockBuyUI.h">
+      <Filter>Header Files\FrameWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWnd\StockCancelUI.h">
+      <Filter>Header Files\FrameWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWnd\StockCapitalFlowUI.h">
+      <Filter>Header Files\FrameWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWnd\StockCapitalPositionUI.h">
+      <Filter>Header Files\FrameWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWnd\StockDailyDealUI.h">
+      <Filter>Header Files\FrameWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWnd\StockDailyOrderUI.h">
+      <Filter>Header Files\FrameWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWnd\StockPastDealUI.h">
+      <Filter>Header Files\FrameWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWnd\StockPastOrderUI.h">
+      <Filter>Header Files\FrameWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWnd\StockSellUI.h">
+      <Filter>Header Files\FrameWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\AbstractUI.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\CharacterSet.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Context.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\UserMessage.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\version.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiEx\ObserverBase.h">
+      <Filter>Header Files\DuiEx</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiEx\UIMenu.h">
+      <Filter>Header Files\DuiEx</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Base\TimeKit.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

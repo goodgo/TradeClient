@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+	<VerticalLayout name="StockCancelUI" bkcolor="#FFF5FFFA">
+		<Label text="撤单" height="25" padding="20,0,0,0" font="0" textcolor="#FF000000"/>				
+		<Control height="2" bkcolor="#FFBFEFFF"/>
+		<HorizontalLayout height="40" inset="10,10,10,10">
+			<Button name="SelectAllBtn" text="全部选中" width="50" padding="20,0,0,0" normalimage="file=&apos;UI/button_nor.bmp&apos;" hotimage="file='UI/Button_Hot.png' " pushedimage="file='UI/button_pushed.png' "/>
+			<Button name="CancelBtn"    text="撤单"     width="50" padding="20,0,0,0" normalimage="file=&apos;UI/button_nor.bmp&apos;" hotimage="file='UI/Button_Hot.png' " pushedimage="file='UI/button_pushed.png' "/>
+			<Button name="CancelAllBtn" text="全撤"     width="50" padding="20,0,0,0" normalimage="file=&apos;UI/button_nor.bmp&apos;" hotimage="file='UI/Button_Hot.png' " pushedimage="file='UI/button_pushed.png' "/>
+			<Button name="CancelBuyBtn" text="撤买"     width="50" padding="20,0,0,0" normalimage="file=&apos;UI/button_nor.bmp&apos;" hotimage="file='UI/Button_Hot.png' " pushedimage="file='UI/button_pushed.png' "/>
+			<Button name="CancelSellBtn"text="撤卖"     width="50" padding="20,0,0,0" normalimage="file=&apos;UI/button_nor.bmp&apos;" hotimage="file='UI/Button_Hot.png' " pushedimage="file='UI/button_pushed.png' "/>
+			<Edit   name="StockIDEdt"   font="4"        width="90" padding="20,0,0,0" bkimage="file='UI/search_bg.png' source='0,0,258,23' corner='1,1,1,1'"/>
+			<Button name="SelectIDBtn"  text="查询代码" width="50" padding="20,0,0,0" normalimage="file=&apos;UI/button_nor.bmp&apos;" hotimage="file='UI/Button_Hot.png' " pushedimage="file='UI/button_pushed.png' "/>		
+		</HorizontalLayout>
+		<Include source="xml/StockOrderList.xml" />
+	</VerticalLayout>
+</Window>

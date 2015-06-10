@@ -1,0 +1,7 @@
+链接器》》输入》》附加依赖项
+
+Client_SDK.lib
+pthreadVC2.lib
+ws2_32.lib
+libprotobuf.lib
+libprotobuf-lite.lib

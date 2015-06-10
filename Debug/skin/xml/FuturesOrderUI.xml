@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><!--功能:期货委托下单界面-->
+<Window>
+	<VerticalLayout name="FuturesOrderUI" bkcolor="#FFF5FFFA">
+		<Label text="委托下单" height="25" padding="20,0,0,0" font="0" textcolor="#FFFF0000"/>				
+		<Control height="2" bkcolor="#FFBFEFFF"/>
+		<HorizontalLayout height="230">
+			<VerticalLayout inset="20,10,0,0"  width="230">
+				<HorizontalLayout padding="10,7,0,0" height="20">
+					<Label text="合约代码:" width="60" font="1" textcolor="#FFFF0000" />							
+					<Combo name="ContractIDComb" width="100" height="20" pos="66,4" float="true" normalimage="file='UI/Combo_nor.bmp' corner='2,2,24,2'" hotimage="file='UI/Combo_over.bmp' corner='2,2,24,2'" pushedimage="file='UI/Combo_over.bmp' corner='2,2,24,2'"  textpadding="3,1,1,1" >
+						<ListLabelElement text="IF1503" selected="true" />
+						<ListLabelElement text="IF1505" />
+						<ListLabelElement text="IF1506" />
+						<ListLabelElement text="IF1509" />
+					</Combo>
+					<Edit name="ContractIDEdt" width="80" pos="67,5" float="true" font="1" bkimage="file='UI/search_bg.png' source='0,0,258,23' corner='1,1,1,1'"/>				
+				</HorizontalLayout>
+				<HorizontalLayout padding="10,7,0,0" height="20">
+					<Label text="买卖:"   width="60" font="1" textcolor="#FFFF0000" />
+					<Option name="BuyOpt" width="10" height="10" padding="0,7,0,0" selected="true" normalimage="file='UI/RadioBtnNon.png'" selectedimage="file='UI/RadioBtnSel.png'" pushedimage="file='UI/RadioBtnSel.png'"  group="FuturesBuySellGroup"/>
+					<Label text="买入"    width="25" font="1" />
+					<Option name="SellOpt"width="10" height="10" padding="10,7,0,0" normalimage="file='UI/RadioBtnNon.png'" selectedimage="file='UI/RadioBtnSel.png'" pushedimage="file='UI/RadioBtnSel.png'" group="FuturesBuySellGroup"/>							
+					<Label text="卖出"    width="25" font="1" />
+				</HorizontalLayout>
+				<HorizontalLayout padding="10,7,0,0" height="20">
+					<Label text="开平:" width="60" font="1" textcolor="#FFFF0000"/>
+					<Option name="OpenOpt" width="10" height="10" padding="0,7,0,0" selected="true" normalimage="file='UI/RadioBtnNon.png'" selectedimage="file='UI/RadioBtnSel.png'" pushedimage="file='UI/RadioBtnSel.png'"  group="OpenCloseGroup"/>
+					<Label text="开仓"    width="25" font="1" />
+					<Option name="CloseTodayOpt"width="10" height="10" padding="10,7,0,0" normalimage="file='UI/RadioBtnNon.png'" selectedimage="file='UI/RadioBtnSel.png'" pushedimage="file='UI/RadioBtnSel.png'" group="OpenCloseGroup"/>							
+					<Label text="平今"    width="25" font="1" />
+					<Option name="CloseOpt"width="10" height="10" padding="10,7,0,0" normalimage="file='UI/RadioBtnNon.png'" selectedimage="file='UI/RadioBtnSel.png'" pushedimage="file='UI/RadioBtnSel.png'" group="OpenCloseGroup"/>							
+					<Label text="平仓"    width="25" font="1" />
+				</HorizontalLayout>
+				<HorizontalLayout padding="10,7,0,0" height="20">
+					<Label text="手数:" width="60" font="1" textcolor="#FFFF0000"/>
+					<Edit name="LotsEdt" width="80" font="1" bkimage="file='UI/search_bg.png' source='0,0,258,23' corner='1,1,1,1'"/>
+				</HorizontalLayout>
+				<HorizontalLayout padding="10,7,0,0" height="20">
+					<Label text="跟盘价:" width="60" font="1" textcolor="#FFFF0000"/>
+					<Edit name="QuotaPriceEdt" width="80" font="1" bkimage="file='UI/search_bg.png' source='0,0,258,23' corner='1,1,1,1'"/>
+				</HorizontalLayout>
+				<HorizontalLayout height="25" padding="80,10,0,0">
+					<Button name="RefillBtn" text="重填" width="50" normalimage="file=&apos;UI/button_nor.bmp&apos;" hotimage="file='UI/Button_Hot.png' " pushedimage="file='UI/button_pushed.png' "/>
+					<Button name="BuyBtn" text="下单" width="50" padding="20,0,0,0" normalimage="file=&apos;UI/button_nor.bmp&apos;" hotimage="file='UI/Button_Hot.png' " pushedimage="file='UI/button_pushed.png' "/>
+				</HorizontalLayout>
+			</VerticalLayout>
+		</HorizontalLayout>
+		<HorizontalLayout insert="2,2,2,2" height="30">
+			<Option name="OrderOpt"  text="委托" font="5" padding="2,0,0,0" width="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" normalimage="UI/Tab/tabbar_normal.png" hotimage="UI/tabbar_hover.png" pushedimage="tabbar_pushed.png" selected="true" selectedimage="UI/tabbar_pushed.png" group="SelectOption"/>
+			<Option name="DealOpt"     text="成交" font="5" padding="2,0,0,0" width="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" normalimage="UI/tabbar_normal.png" hotimage="UI/tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="UI/tabbar_pushed.png" group="SelectOption" />
+			<Option name="PositionOpt" text="持仓" font="5" padding="2,0,0,0" width="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" normalimage="UI/tabbar_normal.png" hotimage="UI/tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="UI/tabbar_pushed.png" group="SelectOption" />
+			<Button name="RefreshBtn"    text="刷新" font="5" padding="200,4,4,4" width="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" normalimage="file=&apos;UI/Button/button_nor.bmp&apos;" hotimage="file='UI/Button_Hot.png' " pushedimage="file='UI/button_pushed.png' " selectedimage="UI/tabbar_pushed.png" />
+			<Button name="CancelAllBtn"  text="全撤" font="5" padding="20,4,4,4"  width="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" normalimage="file=&apos;UI/button_nor.bmp&apos;" hotimage="file='UI/Button_Hot.png' " pushedimage="file='UI/button_pushed.png' " selectedimage="UI/tabbar_pushed.png" />
+			<Button name="CancelBuyBtn"  text="撤买" font="5" padding="5,4,4,4"   width="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" normalimage="file=&apos;UI/button_nor.bmp&apos;" hotimage="file='UI/Button_Hot.png' " pushedimage="file='UI/button_pushed.png' " selectedimage="UI/tabbar_pushed.png" />
+			<Button name="CancelSellBtn" text="撤卖" font="5" padding="5,4,4,4"   width="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" normalimage="file=&apos;UI/button_nor.bmp&apos;" hotimage="file='UI/Button_Hot.png' " pushedimage="file='UI/button_pushed.png' " selectedimage="UI/tabbar_pushed.png" />
+		</HorizontalLayout>
+		<Control height="2" bkcolor="#FFBFEFFF"/>
+		<TabLayout name="Switch">
+			<HorizontalLayout>
+				<Include source="xml/FuturesOrderList.xml" />	
+			</HorizontalLayout>
+			<HorizontalLayout>
+				<Include source="xml/FuturesDealList.xml" />
+			</HorizontalLayout>
+			<HorizontalLayout>
+				<Include source="xml/FuturesPositionList.xml" />
+			</HorizontalLayout>
+		</TabLayout>	
+	</VerticalLayout>
+</Window>

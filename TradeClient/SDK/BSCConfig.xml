@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<localServer ip="127.0.0.1" port="12345"></localServer>
+
+<GoogleProtoFile>
+	<Level3Msg id="1" fileName="protoDemo1"></Level3Msg>
+	<Level3Msg id="2" fileName="protoDemo2"></Level3Msg>
+	<Level3Msg id="3" fileName="protoDemo3"></Level3Msg>
+	<Level3Msg id="4" fileName="protoDemo4"></Level3Msg>
+	<Level3Msg id="5" fileName="protoDemo5"></Level3Msg>
+	<Level3Msg id="6" fileName="protoDemo6"></Level3Msg>
+	<Level3Msg id="7" fileName="protoDemo7"></Level3Msg>
+</GoogleProtoFile>

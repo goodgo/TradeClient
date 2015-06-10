@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><!--现货卖出界面-->
+<Window>
+	<VerticalLayout name="StockSellUI" bkcolor="#FFF5FFFA">
+		<Label text="卖出" height="25" padding="20,0,0,0" font="0" textcolor="#458B00"/>				
+		<Control height="2" bkcolor="#FFBFEFFF"/>
+		<HorizontalLayout height="250">
+			<VerticalLayout inset="20,10,0,0" width="210">
+				<HorizontalLayout padding="10,2,0,0">
+					<Label text="证券代码" width="60" height="25" font="1" textcolor="#458B00"/>
+					<Combo name="StockIDComb" float="true" width="100" height="25" pos="70,4" normalimage="file='UI/Combo_nor.bmp' corner='2,2,24,2'" hotimage="file='UI/Combo_over.bmp' corner='2,2,24,2'" pushedimage="file='UI/Combo_over.bmp' corner='2,2,24,2'"  textpadding="1,1,1,1" >
+						<ListLabelElement text="510300" selected="true" />
+						<ListLabelElement text="600028" />
+					</Combo>
+					<Edit name="StockIDEdt" float="true" width="80" height="23" pos="71,5" font="1" maxchar="6" bordercolor="FF4EA0D1"/>					
+				</HorizontalLayout>
+				<HorizontalLayout padding="10,2,0,0">
+					<Label text="证券名称:" width="60" height="25" font="1" textcolor="#458B00"/>
+					<Label name="StockNameLab" width="100" height="25" font="4" padding="10,0,0,0" />
+				</HorizontalLayout>
+				<HorizontalLayout padding="10,2,0,0">
+					<Label text="卖出价格:" width="60" height="25" font="1" textcolor="#458B00"/>
+					<Edit name="SellPriceEdt" width="90" height="25" font="4" padding="10,0,0,0" />
+					<VerticalLayout>
+						<Button name="PriceAddBtn" width="10" height="12" normalimage="file='UI/scrollbar.bmp' source='0,90,16,106' corner='1,1,1,1'"  hotimage="file='UI/scrollbar.bmp' source='54,92,70,108' corner='1,1,1,1'" pushedimage="file='UI/scrollbar.bmp' source='36,92,52,108' corner='1,1,1,1'"/>
+						<Button name="PriceSubBtn" width="10" height="12" normalimage="file='UI/scrollbar.bmp' source='0,108,16,124' corner='1,1,1,1'" hotimage="file='UI/scrollbar.bmp' source='54,106,70,122' corner='1,1,1,1'" pushedimage="file='UI/scrollbar.bmp' source='36,106,52,122' corner='1,1,1,1'"/>
+					</VerticalLayout>
+				</HorizontalLayout>
+				<HorizontalLayout padding="10,2,0,0">
+					<Label text="可用余额:" width="60" height="25" font="1" textcolor="#458B00"/>
+					<Label name="CanUseCapitalLab" width="100" height="25" font="4" padding="10,0,0,0"/>
+				</HorizontalLayout>
+				<HorizontalLayout padding="10,2,0,0">
+					<Label text="可卖(股):" width="60" height="25" font="1" textcolor="#458B00"/>
+					<Label name="CanSellNumLab" width="100" height="25" font="4" padding="10,0,0,0"/>
+				</HorizontalLayout>				
+				<HorizontalLayout padding="10,2,0,0">
+					<Label text="卖出数量:" width="60" height="25" font="1" textcolor="#458B00"/>
+					<Edit name="SellNumEdt" width="100" height="25" font="4" padding="10,0,0,0" bkimage="file='UI/search_bg.png' source='0,0,258,23' corner='1,1,1,1'"/>
+				</HorizontalLayout>
+				<HorizontalLayout height="25" padding="60,5,0,0">
+					<Button name="RefillBtn" text="重填" width="50" normalimage="file=&apos;UI/button_nor.bmp&apos;" hotimage="file='UI/Button_Hot.png' " pushedimage="file='UI/button_pushed.png' "/>
+					<Button name="SellBtn" text="卖出(S)" width="50" padding="20,0,0,0" normalimage="file=&apos;UI/button_nor.bmp&apos;" hotimage="file='UI/Button_Hot.png' " pushedimage="file='UI/button_pushed.png' "/>
+				</HorizontalLayout>
+			</VerticalLayout>
+		</HorizontalLayout>
+		<HorizontalLayout insert="2,2,2,2" height="30">
+			<Option name="OrderOpt"  text="委托" font="5" padding="2,0,0,0" width="60" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" normalimage="UI/tabbar_normal.png" hotimage="UI/tabbar_hover.png" pushedimage="tabbar_pushed.png" selected="true" selectedimage="UI/tabbar_pushed.png" group="SelectOption"/>
+			<Option name="DealOpt"     text="成交" font="5" padding="2,0,0,0" width="60" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" normalimage="UI/tabbar_normal.png" hotimage="UI/tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="UI/tabbar_pushed.png" group="SelectOption" />
+			<Option name="PositionOpt" text="持仓" font="5" padding="2,0,0,0" width="60" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" normalimage="UI/tabbar_normal.png" hotimage="UI/tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="UI/tabbar_pushed.png" group="SelectOption" />
+			<Button name="RefreshBtn"    text="刷新" font="5" padding="200,4,4,4" width="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" normalimage="file=&apos;UI/button_nor.bmp&apos;" hotimage="file='UI/button_Hot.png' " pushedimage="file='UI/button_pushed.png' " selectedimage="UI/tabbar_pushed.png" />
+			<Button name="CancelAllBtn"  text="全撤" font="5" padding="20,4,4,4"  width="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" normalimage="file=&apos;UI/button_nor.bmp&apos;" hotimage="file='UI/button_Hot.png' " pushedimage="file='UI/button_pushed.png' " selectedimage="UI/tabbar_pushed.png" />
+			<Button name="CancelBuyBtn"  text="撤买" font="5" padding="5,4,4,4"   width="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" normalimage="file=&apos;UI/button_nor.bmp&apos;" hotimage="file='UI/button_Hot.png' " pushedimage="file='UI/button_pushed.png' " selectedimage="UI/tabbar_pushed.png" />
+			<Button name="CancelSellBtn" text="撤卖" font="5" padding="5,4,4,4"   width="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" normalimage="file=&apos;UI/button_nor.bmp&apos;" hotimage="file='UI/button_Hot.png' " pushedimage="file='UI/button_pushed.png' " selectedimage="UI/tabbar_pushed.png" />
+		</HorizontalLayout>
+		<Control height="2" bkcolor="#FFBFEFFF"/>
+		<TabLayout name="SwitchTab">
+			<HorizontalLayout>
+				<Include source="xml/StockOrderList.xml" />
+			</HorizontalLayout>
+			<HorizontalLayout>
+				<Include source="xml/StockDealList.xml" />				
+			</HorizontalLayout>
+			<HorizontalLayout>
+				<Include source="xml/StockPositionList.xml" />
+			</HorizontalLayout>
+		</TabLayout>	
+	</VerticalLayout>
+</Window>

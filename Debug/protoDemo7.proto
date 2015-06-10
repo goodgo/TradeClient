@@ -1,0 +1,16 @@
+message RequestRow7{
+	optional int32 id = 1;
+}
+message Request7{
+	repeated RequestRow7 row = 1;
+}
+
+message RespondRow7{
+    optional string name = 1;
+    optional int32 id = 2;
+    optional float money = 3;
+}
+
+message Respond7{
+    repeated RespondRow7 row = 1;
+}

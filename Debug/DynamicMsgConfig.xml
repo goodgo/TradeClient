@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Message>
+	<protoDemo1>
+		<Request table="Request1" row="RequestRow1"></Request>
+		<Respond table="Respond1" row="RespondRow1"></Respond>
+	</protoDemo1>
+
+	<protoDemo2>
+		<Request table="Request2" row="RequestRow2"></Request>
+		<Respond table="Respond2" row="RespondRow2"></Respond>
+	</protoDemo2>
+
+	<protoDemo3>
+		<Request table="Request3" row="RequestRow3"></Request>
+		<Respond table="Respond3" row="RespondRow3"></Respond>
+	</protoDemo3>
+	
+	<protoDemo4>
+		<Request table="Request4" row="RequestRow4"></Request>
+		<Respond table="Respond4" row="RespondRow4"></Respond>
+	</protoDemo4>
+
+	<protoDemo5>
+		<Request table="Request5" row="RequestRow5"></Request>
+		<Respond table="Respond5" row="RespondRow5"></Respond>
+	</protoDemo5>
+
+	<protoDemo6>
+		<Request table="Request6" row="RequestRow6"></Request>
+		<Respond table="Respond6" row="RespondRow6"></Respond>
+	</protoDemo6>
+	
+	<protoDemo7>
+		<Request table="Request7" row="RequestRow7"></Request>
+		<Respond table="Respond7" row="RespondRow7"></Respond>
+	</protoDemo7>
+</Message>

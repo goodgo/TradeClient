@@ -1,0 +1,16 @@
+message RequestRow6{
+	optional string name = 1;
+	optional int32 id = 2;
+	optional string remark = 3;
+}
+message Request6{
+	repeated RequestRow6 row = 1;
+}
+
+message RespondRow6{
+    optional string result = 1;
+}
+
+message Respond6{
+    repeated RespondRow6 row = 1;
+}

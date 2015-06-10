@@ -1,0 +1,18 @@
+message RequestRow3{
+	optional string name = 1;
+	optional int32 age = 2;
+	optional float money = 3;
+}
+message Request3{
+	repeated RequestRow3 row = 1;
+}
+
+message RespondRow3{
+    optional string name = 1;
+    optional int32 age = 2;
+    optional float money = 3;
+}
+
+message Respond3{
+    repeated RespondRow3 row = 1;
+}

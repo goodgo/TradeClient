@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><!--功能:期货历史委托界面-->
+<Window>
+	<VerticalLayout name="FuturesPastOrderUI">
+		<Label text="历史委托" height="25" padding="20,0,0,0" font="0" textcolor="#FFFF0000"/>
+		<Control height="2" bkcolor="#FFBFEFFF"/>
+		<HorizontalLayout height="40" inset="5,5,5,5">
+			<Label text="查询日期:" width="50" height="20" padding="10,0,0,0" font="1" textcolor="#FFFF0000"/>
+			<DateTime name="BeginDateTime" width="80" height="20" padding="10,0,0,0" align="center" bkcolor="#FFF0F8FF" />
+			<Label text="至" width="10" height="20" padding="10,0,0,0" font="1" textcolor="#FFFF0000"/>
+			<DateTime name="EndDataTime" width="80" height="20" padding="10,0,0,0" align="center" bkcolor="#FFF0F8FF" />
+			<Button name="SureBtn" text="确定" width="60" height="20" padding="20,0,0,0" normalimage="file=&apos;UI/button_nor.bmp&apos;" hotimage="file='UI/Button_Hot.png' " pushedimage="file='UI/button_pushed.png' "/>
+		</HorizontalLayout>
+		<HorizontalLayout>
+			<Include source="xml/FuturesOrderList.xml" />
+		</HorizontalLayout>
+	</VerticalLayout>
+</Window>

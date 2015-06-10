@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="460,320" caption="0,0,0,162" mininfo="460,320" roundcorner="4,4" >
+<Font name="微软雅黑" size="13" bold="true" italic="false"/>
+	<VerticalLayout >	
+		<HorizontalLayout height="32" inset="2,2,2,0" bkcolor="#FF4EA0D1">
+			<Label text="欢迎登陆Rione交易平台" width="200" font="0" textcolor="#FFFFFFFF"/>
+			<Control />
+			<Button name="CloseBtn" width="20" height="20" tooltip="退出登录" normalimage="file='UI/btn_close.png' source='0,0,20,20'" hotimage="file='UI/btn_close.png' source='0,20,20,40' " pushedimage="file='UI/btn_close.png'  source='0,20,20,40' "/>
+		</HorizontalLayout>
+		<Control height="130" bkcolor="#FF4EA0D1"/>
+		<VerticalLayout inset="2,2,2,2" bkcolor="#FFD1EEEE">	
+			<HorizontalLayout height="22" padding="100,20,0,0">
+				<Container width="200">
+					<Label text="账号：" width="40"/>
+					<Combo name="NameComb" float="true" pos="55, 0, 200, 22" normalimage="file='UI/combo.png' corner='2,2,24,2' source='0,0,100,22' " hotimage="file='UI/combo.png' corner='2,2,24,2' source='0,22,100,44'" pushedimage="file='UI/combo.png' corner='2,2,24,2' source='0,44,100,66'" textpadding="1,1,1,1" >
+						<ListLabelElement text="lytz001" selected="true" />
+						<ListLabelElement text="lytz002" />
+					</Combo>
+					<Edit name="NameEdt" float="true" pos="57, 2, 177, 20"/>					
+				</Container>
+				<Button name="RegisterBtn" text="{u}{l}注册账号{/l}{/u}" showhtml="true" width="50" padding="20,0,0,0"/>
+			</HorizontalLayout>
+			<HorizontalLayout height="20" padding="100,20,0,0" childpadding="15">
+				<Label text="密码：" width="40"/>
+				<Edit name="PasswdEdt" password="true" bordercolor="#FF4EA0D1" bordersize="1" width="145"/>
+				<Button name="FindPasswdBtn" text="{u}{l}找回密码{/l}{/u}" showhtml="true" width="60" />
+			</HorizontalLayout>
+			<!--CheckBox name="RememNameChekbox" text="记住密码" width="16" height="16" padding="150,20,0,0" textpadding="16,1,0,0" align="left" normalimage="file='UI/unchecked.png' " selectedimage="UI/checked.png"/-->			
+			<Button name="LoginBtn" width="145" height="25" padding="155,20,0,0" text="登 录" font="0" textcolor="#FFFFFFFF" normalimage="UI/button_nor.png" hotimage="UI/button_over.png" borderround="7,7"/>														
+		</VerticalLayout>
+    </VerticalLayout>
+</Window>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><!--期货持仓表头-->
+<Window>
+	<List name="FuturesPositionList" bkcolor="#FFFFFFFF" inset="0,0,0,0" itemshowhtml="true" vscrollbar="true" hscrollbar="true" headerbkimage="file='skin/ListRes/list_header_bg.png'" itemalign="center" itembkcolor="#FFE2DDDF" itemaltbk="true" hscrollbar="true" vscrollbar="true" menu="true">
+		<ListHeader height="24" menu="true">
+			<ListHeaderItem text="证券代码" font="1" width="80" normalimage="file='UI/Button_Non.png'" hotimage="file='UI/list_header_hot.png'" pushedimage="file='UI/list_header_pushed.png'" sepimage="file='UI/list_header_sep.png'" sepwidth="1"/>
+			<ListHeaderItem text="证券名称" font="1" width="80" normalimage="file='UI/Button_Non.png'" hotimage="file='UI/list_header_hot.png'" pushedimage="file='UI/list_header_pushed.png'" sepimage="file='UI/list_header_sep.png'" sepwidth="1"/>
+			<ListHeaderItem text="证券余额" font="1" width="80" normalimage="file='UI/Button_Non.png'" hotimage="file='UI/list_header_hot.png'" pushedimage="file='UI/list_header_pushed.png'" sepimage="file='UI/list_header_sep.png'" sepwidth="1"/>
+			<ListHeaderItem text="可用余额" font="1" width="80" normalimage="file='UI/Button_Non.png'" hotimage="file='UI/list_header_hot.png'" pushedimage="file='UI/list_header_pushed.png'" sepimage="file='UI/list_header_sep.png'" sepwidth="1"/>
+			<ListHeaderItem text="冻结数量" font="1" width="80" normalimage="file='UI/Button_Non.png'" hotimage="file='UI/list_header_hot.png'" pushedimage="file='UI/list_header_pushed.png'" sepimage="file='UI/list_header_sep.png'" sepwidth="1"/>
+			<ListHeaderItem text="盈亏"     font="1" width="80" normalimage="file='UI/Button_Non.png'" hotimage="file='UI/list_header_hot.png'" pushedimage="file='UI/list_header_pushed.png'" sepimage="file='UI/list_header_sep.png'" sepwidth="1"/>
+			<ListHeaderItem text="成本价"   font="1" width="50" normalimage="file='UI/Button_Non.png'" hotimage="file='UI/list_header_hot.png'" pushedimage="file='UI/list_header_pushed.png'" sepimage="file='UI/list_header_sep.png'" sepwidth="1"/>
+			<ListHeaderItem text="盈亏比(%)"font="1" width="80" normalimage="file='UI/Button_Non.png'" hotimage="file='UI/list_header_hot.png'" pushedimage="file='UI/list_header_pushed.png'" sepimage="file='UI/list_header_sep.png'" sepwidth="1"/>
+			<ListHeaderItem text="市价"     font="1" width="80" normalimage="file='UI/Button_Non.png'" hotimage="file='UI/list_header_hot.png'" pushedimage="file='UI/list_header_pushed.png'" sepimage="file='UI/list_header_sep.png'" sepwidth="1"/>
+			<ListHeaderItem text="市值"     font="1" width="80" normalimage="file='UI/Button_Non.png'" hotimage="file='UI/list_header_hot.png'" pushedimage="file='UI/list_header_pushed.png'" sepimage="file='UI/list_header_sep.png'" sepwidth="1"/>
+			<ListHeaderItem text="交易市场" font="1" width="80" normalimage="file='UI/Button_Non.png'" hotimage="file='UI/list_header_hot.png'" pushedimage="file='UI/list_header_pushed.png'" sepimage="file='UI/list_header_sep.png'" sepwidth="1"/>
+		</ListHeader>
+	</List>
+</Window>

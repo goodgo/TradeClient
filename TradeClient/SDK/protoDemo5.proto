@@ -1,0 +1,15 @@
+message RequestRow5{
+	optional int32 id = 1;
+	optional string remark = 2;
+}
+message Request5{
+	repeated RequestRow5 row = 1;
+}
+
+message RespondRow5{
+    optional string result = 1;
+}
+
+message Respond5{
+    repeated RespondRow5 row = 1;
+}
