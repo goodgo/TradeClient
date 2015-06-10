@@ -105,17 +105,17 @@ void CLoginFrameWnd::OnLogin( TNotifyUI& msg )
 	if (!m_pNameEdt->GetText().IsEmpty()
 		&& !m_pPasswdEdt->GetText().IsEmpty())
 	{
+		MessageBoxDialog(GetHWND(), 100, _T("登陆成功!"), MB_ICONINFORMATION);
 		//new a Business, send to sdk
 		/*
 		CLoginBusiness* LoginBusiness = new CLoginBusiness(GetHWND(), this->GetWindowClassName());
-		std::string sValue;
-		sValue = Base::CharacterSet::UnicodeToANSI(m_pNameEdt->GetText().GetData());
-		LoginBusiness->SetKeyValue("LoginName", sValue);
-		sValue = Base::CharacterSet::UnicodeToANSI(m_pPasswdEdt->GetText().GetData()); 	
-		LoginBusiness->SetKeyValue("LoginPasswd", sValue);
+		LoginBusiness->SetKeyValue("登陆名", Base::CharacterSet::UnicodeToANSI(m_pNameEdt->GetText().GetData());	
+		LoginBusiness->SetKeyValue("登陆密码", Base::CharacterSet::UnicodeToANSI(m_pPasswdEdt->GetText().GetData());
 		LoginBusiness->SendRequest();
 		*/
-	/*	
+
+
+		/*	
 		loginres *res = new loginres();
 		if (m_pNameEdt->GetText() == _T("lytz002") && m_pPasswdEdt->GetText() == _T("123"))
 		{						
@@ -126,7 +126,7 @@ void CLoginFrameWnd::OnLogin( TNotifyUI& msg )
 			res->status = false;
 		}
 		::PostMessage(GetHWND(),WM_USER_LOGIN_RES,(WPARAM)res, NULL);
-*/
+		*/
 	}
 }
 
@@ -158,14 +158,16 @@ LRESULT CLoginFrameWnd::OnRespond(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL&
 	loginres *res = (loginres *)wParam;
 	if (res->status == true)
 	{		
-		::MessageBox(GetHWND(), _T("登陆成功!"), NULL, NULL);
+		//::MessageBox(GetHWND(), _T("登陆成功!"), NULL, NULL);
+		MessageBoxDialog(GetHWND(), 100, _T("登陆成功!"), MB_ICONINFORMATION);
 		CContext::GetInstance().m_sUsrName = m_pNameEdt->GetText();
 		CContext::GetInstance().m_sUsrPasswd = m_pPasswdEdt->GetText();
 		Close();
 	}
 	else if(res->status == false)
 	{
-		::MessageBox(GetHWND(), _T("登陆名或密码错误!"), NULL, NULL);
+		//::MessageBox(GetHWND(), _T("登陆名或密码错误!"), NULL, NULL);
+		MessageBoxDialog(GetHWND(), 100, _T("登陆名或密码错误!"), MB_ICONINFORMATION);
 		lRes = FALSE;
 	}
 	return lRes;

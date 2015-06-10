@@ -98,6 +98,7 @@
     <ClCompile Include="Base\CharacterSet.cpp" />
     <ClCompile Include="Base\ControllerBase.cpp" />
     <ClCompile Include="Base\TimeKit.cpp" />
+    <ClCompile Include="Base\UserMessage.cpp" />
     <ClCompile Include="FrameWnd\FundMergeUI.cpp" />
     <ClCompile Include="FrameWnd\FundSplitUI.cpp" />
     <ClCompile Include="FrameWnd\FuturesCapitalFlowUI.cpp" />
@@ -110,6 +111,7 @@
     <ClCompile Include="FrameWnd\LockScreenUI.cpp" />
     <ClCompile Include="FrameWnd\LoginFrameWnd.cpp" />
     <ClCompile Include="FrameWnd\MainFrameWnd.cpp" />
+    <ClCompile Include="FrameWnd\MessageBoxWnd.cpp" />
     <ClCompile Include="FrameWnd\StockBuyUI.cpp" />
     <ClCompile Include="FrameWnd\StockCancleUI.cpp" />
     <ClCompile Include="FrameWnd\StockCapitalFlowUI.cpp" />
@@ -136,6 +138,7 @@
     <ClInclude Include="FrameWnd\LockScreenUI.h" />
     <ClInclude Include="FrameWnd\LoginFrameWnd.h" />
     <ClInclude Include="FrameWnd\MainFrameWnd.h" />
+    <ClInclude Include="FrameWnd\MessageBoxWnd.h" />
     <ClInclude Include="FrameWnd\StockBuyUI.h" />
     <ClInclude Include="FrameWnd\StockCancelUI.h" />
     <ClInclude Include="FrameWnd\StockCapitalFlowUI.h" />

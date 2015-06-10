@@ -118,6 +118,12 @@
     <ClCompile Include="Base\TimeKit.cpp">
       <Filter>Source Files\Base</Filter>
     </ClCompile>
+    <ClCompile Include="FrameWnd\MessageBoxWnd.cpp">
+      <Filter>Source Files\FrameWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\UserMessage.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FrameWnd\FundMergeUI.h">
@@ -207,6 +213,9 @@
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Base\TimeKit.h">
       <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWnd\MessageBoxWnd.h">
+      <Filter>Header Files\FrameWnd</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -31,4 +31,9 @@ public:
 	bool status;
 };
 
+void MessageBoxDialog(HWND hWnd,
+					  UINT ErrorCode,
+					  LPCTSTR lpExMsg,
+					  UINT uType);
+
 #endif

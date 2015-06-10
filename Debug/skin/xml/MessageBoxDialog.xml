@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="355,166" caption="0,0,0,126" minsize="355,166"> 
+  <Font name="微软雅黑" size="13" default="true"/>
+  <VerticalLayout  bordercolor="#FF47484B" bordersize="1" inset="1,1,1,1">
+      <HorizontalLayout name="background" height="30" bkimage="file='UI\BKImage\4.jpg' source='0,0,1000,30'" ><!-- 标题栏 -->
+          <Label name="Tip" text="提示" textcolor="#FFFFFFFF" textpadding="5,0,0,0" font="1" autocalcwidth="false" width="300"/>
+          <Control />
+          <Button name="CloseBtn" width="23" height="18" padding="0,6,0,0" normalimage="file=&apos;UI/button_nor.bmp&apos;" hotimage="file=&apos;UI/button_over.bmp&apos;" pushedimage="file=&apos;UI/button_pushed.png&apos;" />                     
+      </HorizontalLayout>
+  
+      <VerticalLayout name="TextLayout" bkcolor="#FFFFFFFF" > 
+          <Text name="text" align="center" padding="0,45,0,0" />      
+          <HorizontalLayout childpadding="10" padding="0,35,0,0" height="36" >
+          	  <Control />
+              <Button name="SureBtn" text="确定" width="75" height="28" normalimage="file=&apos;UI/button_nor.bmp&apos;" hotimage="file=&apos;UI/button_over.bmp&apos;" pushedimage="file=&apos;UI/button_pushed.png&apos;" /> 
+              <Button name="CancelBtn" text="取消" width="75" height="28" normalimage="file=&apos;UI/button_nor.bmp&apos;" hotimage="file=&apos;UI/button_over.bmp&apos;" pushedimage="file=&apos;UI/button_pushed.png&apos;" />   
+              <Control width="1" /> 
+          </HorizontalLayout >     
+      </VerticalLayout >   
+  </VerticalLayout >  
+</Window>
+
+ 

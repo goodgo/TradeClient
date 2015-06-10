@@ -1,12 +1,13 @@
-﻿生成启动时间为 2015/6/10 11:19:53。
-     1>项目“E:\LiYi\Project\TradeClient\TradeClient\TradeClient.vcxproj”在节点 2 上(Build 个目标)。
+﻿生成启动时间为 2015/6/10 16:40:32。
+     1>项目“D:\coding\Mygit\TradeClient\TradeClient\TradeClient.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          D:\Develop\vs2013\VC\bin\CL.exe /c /IE:\LiYi\Project\TradeClient\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt FrameWnd\LoginFrameWnd.cpp
          LoginFrameWnd.cpp
        Link:
-         D:\Develop\vs2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\LiYi\Project\TradeClient\Debug\TradeClient.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\TradeClient.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\LiYi\Project\TradeClient\Debug\TradeClient.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\LiYi\Project\TradeClient\Debug\TradeClient.lib" /MACHINE:X86 /SAFESEH Debug\CharacterSet.obj
+         D:\Develop\vs2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\coding\Mygit\TradeClient\Debug\TradeClient.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\TradeClient.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\coding\Mygit\TradeClient\Debug\TradeClient.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\coding\Mygit\TradeClient\Debug\TradeClient.lib" /MACHINE:X86 /SAFESEH Debug\CharacterSet.obj
          Debug\ControllerBase.obj
          Debug\TimeKit.obj
+         Debug\UserMessage.obj
          Debug\FundMergeUI.obj
          Debug\FundSplitUI.obj
          Debug\FuturesCapitalFlowUI.obj
@@ -19,6 +20,7 @@
          Debug\LockScreenUI.obj
          Debug\LoginFrameWnd.obj
          Debug\MainFrameWnd.obj
+         Debug\MessageBoxWnd.obj
          Debug\StockBuyUI.obj
          Debug\StockCancleUI.obj
          Debug\StockCapitalFlowUI.obj
@@ -30,12 +32,11 @@
          Debug\StockSellUI.obj
          Debug\UIMenu.obj
          Debug\TradeClient.obj
-     1>CharacterSet.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/SAFESEH”规范)
-         TradeClient.vcxproj -> E:\LiYi\Project\TradeClient\Debug\TradeClient.exe
+         TradeClient.vcxproj -> D:\coding\Mygit\TradeClient\Debug\TradeClient.exe
        Manifest:
-         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\mt.exe /nologo /verbose /out:"E:\LiYi\Project\TradeClient\Debug\TradeClient.exe.manifest" /manifest Debug\TradeClient.exe.intermediate.manifest
-     1>已完成生成项目“E:\LiYi\Project\TradeClient\TradeClient\TradeClient.vcxproj”(Build 个目标)的操作。
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\mt.exe /nologo /verbose /out:"D:\coding\Mygit\TradeClient\Debug\TradeClient.exe.manifest" /manifest Debug\TradeClient.exe.intermediate.manifest
+     1>已完成生成项目“D:\coding\Mygit\TradeClient\TradeClient\TradeClient.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:00.94
+已用时间 00:00:00.92

@@ -498,7 +498,7 @@ LRESULT CMainFrameWnd::OnProductListReq(WPARAM wParam, LPARAM lParam, BOOL& bHan
 /////////////
 void CMainFrameWnd::OnLogin(TNotifyUI& msg)
 {
-    if (CContext::GetInstance().m_sUsrName.IsEmpty())
+	if (CContext::GetInstance().m_sUsrName.IsEmpty())
 	{
 		CLoginFrameWnd* pLoginFrame = new CLoginFrameWnd();
 		if( pLoginFrame == NULL ) { Close(); return; }
@@ -513,7 +513,8 @@ void CMainFrameWnd::OnLogin(TNotifyUI& msg)
 	}
 	else
 	{
-		::MessageBox(GetHWND(), _T("已成功登陆!"), NULL, NULL);
+		//::MessageBox(GetHWND(), _T("已成功登陆!"), NULL, NULL);
+		MessageBoxDialog(GetHWND(), 100, _T("登陆失败!"), MB_ICONINFORMATION);
 		return;
 	}
 }
